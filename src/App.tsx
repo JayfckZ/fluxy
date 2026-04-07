@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import Header from "./containers/Header"
 
 function App() {
-  return <></>
+  return (
+    <>
+      <Header></Header>
+    </>
+  )
 }
 
 export default App

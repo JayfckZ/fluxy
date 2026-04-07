@@ -23,7 +23,6 @@ export default defineConfig([
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
-      'prettier/prettier': 'warn'
     },
     languageOptions: {
       ecmaVersion: 2020,

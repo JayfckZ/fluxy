@@ -1,0 +1,25 @@
+:root {
+    --bg: #080810;
+    --bg2: #0e0e1a;
+    --bg3: #13131f;
+    --card: rgba(255,255,255,0.04);
+    --card-border: rgba(255,255,255,0.08);
+    --purple: #a855f7;
+    --blue: #60a5fa;
+    --cyan: #22d3ee;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --grad: linear-gradient(135deg, #a855f7, #6366f1, #3b82f6, #22d3ee);
+    --grad2: linear-gradient(135deg, #7c3aed, #2563eb);
+    --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Montserrat', sans-serif;
+}
