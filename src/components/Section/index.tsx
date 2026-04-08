@@ -1,12 +1,18 @@
 import type { ReactNode } from "react"
 import { SectionContainer } from "./styles"
 
-const Section = ( content: ReactNode, primary?: boolean) => {
+type SectionProps = {
+  children: ReactNode,
+  primary?: boolean
+  id?: string
+}
+
+const Section = ({ children, primary, id }: SectionProps) => {
 
   return (
-    <SectionContainer primary={primary}>
+    <SectionContainer primary={primary} id={id}>
       <div className="container">
-        {content}
+        {children}
       </div>
     </SectionContainer>
   )

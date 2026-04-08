@@ -21,6 +21,10 @@ export const Hero = styled.section`
     div {
       display: flex;
       gap: 24px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
     }
   }
 
