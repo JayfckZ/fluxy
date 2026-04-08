@@ -11,9 +11,6 @@
     --muted: #94a3b8;
     --grad: linear-gradient(135deg, #a855f7, #6366f1, #3b82f6, #22d3ee);
     --grad2: linear-gradient(135deg, #7c3aed, #2563eb);
-    --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
-    --radius: 16px;
-    --radius-sm: 10px;
 }
 
 * {
@@ -23,3 +20,14 @@
 
   font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+
