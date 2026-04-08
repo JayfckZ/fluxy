@@ -1,6 +1,7 @@
 import Card from './components/Card'
+import { Item, PriceCard } from './components/Card/styles'
 import Section from './components/Section'
-import { CardGrid } from './components/Section/styles'
+import { CardGrid, Step, StepContainer } from './components/Section/styles'
 import Header from './containers/Header'
 import Hero from './containers/Hero'
 import { Layout } from './styles'
@@ -92,6 +93,240 @@ function App() {
                 evita ruídos, acelera decisões e melhora o resultado final.
               </p>
             </Card>
+          </CardGrid>
+        </Section>
+        <Section primary id="processo">
+          <p className="uptitle">Como trabalhamos</p>
+          <h2 className="title">
+            Processo <span>simples e transparente</span>
+          </h2>
+          <p className="subtitle">
+            Do briefing ao lançamento, você acompanha cada etapa de perto.
+          </p>
+          <StepContainer>
+            <Step>
+              <div>01</div>
+            </Step>
+            <div>
+              <h6 className="title">Entendimento</h6>
+              <p className="subtitle">
+                Conversamos para entender sua ideia, objetivo e o que o projeto
+                precisa entregar.
+              </p>
+            </div>
+          </StepContainer>
+          <StepContainer>
+            <Step>
+              <div>02</div>
+            </Step>
+            <div>
+              <h6 className="title">Planejamento</h6>
+              <p className="subtitle">
+                Estruturamos a melhor solução, definindo páginas,
+                funcionalidades e fluxo de navegação.
+              </p>
+            </div>
+          </StepContainer>
+          <StepContainer>
+            <Step>
+              <div>03</div>
+            </Step>
+            <div>
+              <h6 className="title">Desenvolvimento</h6>
+              <p className="subtitle">
+                Transformamos o planejamento em um projeto real, com atenção ao
+                design, responsividade e performance.
+              </p>
+            </div>
+          </StepContainer>
+          <StepContainer>
+            <Step>
+              <div>04</div>
+            </Step>
+            <div>
+              <h6 className="title">Entrega e suporte</h6>
+              <p className="subtitle">
+                Publicamos o projeto, realizamos os ajustes finais e damos
+                suporte para garantir que tudo funcione perfeitamente.
+              </p>
+            </div>
+          </StepContainer>
+        </Section>
+        <Section>
+          <p className="uptitle">Pacotes</p>
+          <h2 className="title">
+            Confira nossos pacotes e <span>seus benefícios</span>
+          </h2>
+          <p className="subtitle">
+            Escolha a melhor opção para o seu negócio.
+          </p>
+          <CardGrid price>
+            <PriceCard>
+              <h6 className="name">STARTER</h6>
+              <p className="subtitle">
+                Para quem precisa de presença online rápida e profissional.
+              </p>
+              <p className="price">
+                R$ <span>400</span>
+              </p>
+              <p className="price-sub">a partir de</p>
+              <ul>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Landing page com até 5 seções</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Design responsivo (mobile + desktop)</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Botão para WhatsApp e formulário</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Publicação do site</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-clock"></i>
+                  <p>Suporte de 15 dias</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Criação de logo</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Integrações com CRM</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Painel administrativo</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Área de login</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Animações complexas</p>
+                </Item>
+              </ul>
+            </PriceCard>
+            <PriceCard destacado>
+              <div className="destaque">MELHOR OPÇÃO</div>
+              <h6 className="name">PRO</h6>
+              <p className="subtitle">
+                Site completo com mais páginas, funcionalidades e suporte
+                dedicado.
+              </p>
+              <p className="price">
+                R$ <span>600</span>
+              </p>
+              <p className="price-sub">a partir de</p>
+              <ul>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Pacote <b>Starter</b> incluso</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Até 4 páginas</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Layout personalizado</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>SEO básico</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Formulário + WhatsApp</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Publicação do site</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-clock"></i>
+                  <p>Suporte de 30 dias</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Área do cliente</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Integrações externas avançadas</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Painel admin avançado</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Copywriting completo</p>
+                </Item>
+              </ul>
+            </PriceCard>
+            <PriceCard>
+              <h6 className="name">ULTRA</h6>
+              <p className="subtitle">
+                Dashboards, aplicações web e sistemas personalizados com banco de dados.
+              </p>
+              <p className="price">
+                R$ <span>900</span>
+              </p>
+              <p className="price-sub">a partir de</p>
+              <ul>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Pacote <b>Pro</b> incluso</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Login</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Dashboard simples</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>CRUD básico</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Banco de dados</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-check"></i>
+                  <p>Painel admin básico</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-clock"></i>
+                  <p>Suporte de 60 dias</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Relatórios complexos</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Integrações com APIs pagas</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Notificações em tempo real</p>
+                </Item>
+                <Item>
+                  <i className="bi bi-x x"></i>
+                  <p>Permissões avançadas</p>
+                </Item>
+              </ul>
+            </PriceCard>
           </CardGrid>
         </Section>
       </Layout>

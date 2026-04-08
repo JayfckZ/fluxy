@@ -5,12 +5,13 @@ type SectionProps = {
   children: ReactNode,
   primary?: boolean
   id?: string
+  className?: string
 }
 
-const Section = ({ children, primary, id }: SectionProps) => {
+const Section = ({ children, primary, id, className }: SectionProps) => {
 
   return (
-    <SectionContainer primary={primary} id={id}>
+    <SectionContainer primary={primary} id={id} className={className}>
       <div className="container">
         {children}
       </div>

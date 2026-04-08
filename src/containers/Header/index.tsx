@@ -7,9 +7,9 @@ const Header = () => {
       <img src={fluxy} width={'128px'} alt="" />
       <nav>
         <NavLink href="#serviços">Serviços</NavLink>
-        <NavLink href="">Por que a Fluxy</NavLink>
-        <NavLink href="">Processo</NavLink>
-        <NavLink2 href="">Falar com a equipe</NavLink2>
+        <NavLink href="#sobre">Quem somos</NavLink>
+        <NavLink href="#processo">Processo</NavLink>
+        <NavLink2 href="#contato">Falar com a equipe</NavLink2>
       </nav>
     </HeaderContainer>
   )

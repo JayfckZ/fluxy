@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { CardContainer } from './styles'
 
 type CardProps = {
-  type: 'icon' | 'number'
+  type: 'icon' | 'number' | 'price'
   icon?: string
   number?: string
   children: ReactNode
