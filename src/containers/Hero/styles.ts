@@ -10,6 +10,7 @@ export const Hero = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: calc(100dvh - 80px);
 
   .container {
     display: flex;

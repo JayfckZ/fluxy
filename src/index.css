@@ -19,10 +19,11 @@
   box-sizing: border-box;
 
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
+  background-color: var(--bg);
 }
 
 .container {

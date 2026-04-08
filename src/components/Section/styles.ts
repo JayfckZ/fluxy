@@ -9,6 +9,7 @@ export const SectionContainer = styled.section<{ primary?: boolean }>`
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   .title {
@@ -35,5 +36,10 @@ export const CardGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 36px;
   margin: 40px 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
 
 `
