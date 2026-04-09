@@ -1,19 +1,49 @@
-import { Header as HeaderContainer, NavLink, NavLink2 } from "./styles"
+import { useEffect, useState } from 'react'
+import { Header, NavLink, NavLink2 } from './styles'
+import { observeSections } from '../../functions'
 import fluxy from '/fluxy-logo.png'
 
-const Header = () => {
+const HeaderContainer = () => {
+  const [active, setActive] = useState<string>('')
+
+  useEffect(() => {
+    const cleanup = observeSections(
+      ['hero', 'serviços', 'sobre', 'processo', 'pacotes', 'contato'],
+      setActive
+    )
+
+    return cleanup
+  }, [])
+
   return (
-    <HeaderContainer>
-      <a href="#"><img src={fluxy} width={'128px'} alt="Fluxy Logo" /></a>
+    <Header>
+      <a href="#">
+        <img src={fluxy} width="128" alt="Fluxy Logo" />
+      </a>
+
       <nav>
-        <NavLink href="#serviços">Serviços</NavLink>
-        <NavLink href="#sobre">Sobre nós</NavLink>
-        <NavLink href="#processo">Processo</NavLink>
-        <NavLink href="#pacotes">Pacotes</NavLink>
-        <NavLink2 href="#contato">Falar com a equipe</NavLink2>
+        <NavLink href="#serviços" active={active === 'serviços'}>
+          Serviços
+        </NavLink>
+
+        <NavLink href="#sobre" active={active === 'sobre'}>
+          Sobre nós
+        </NavLink>
+
+        <NavLink href="#processo" active={active === 'processo'}>
+          Processo
+        </NavLink>
+
+        <NavLink href="#pacotes" active={active === 'pacotes'}>
+          Pacotes
+        </NavLink>
+
+        <NavLink2 href="#contato">
+          Falar com a equipe
+        </NavLink2>
       </nav>
-    </HeaderContainer>
+    </Header>
   )
 }
 
-export default Header
+export default HeaderContainer

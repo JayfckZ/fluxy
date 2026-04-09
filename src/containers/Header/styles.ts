@@ -23,14 +23,38 @@ export const Header = styled.header`
   }
 `
 
-export const NavLink = styled.a`
-  color: var(--muted);
+type NavLinkProps = {
+  active?: boolean
+}
+
+export const NavLink = styled.a<NavLinkProps>`
+  position: relative;
+  color: ${({ active }) => (active ? 'var(--text)' : 'var(--muted)')};
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--grad);
+    transform: scaleX(${({ active }) => (active ? 1 : 0)});
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
 
   &:hover {
     color: var(--text);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 `
 

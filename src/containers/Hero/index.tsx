@@ -2,7 +2,7 @@ import { Hero as HeroContainer, Span, GlowOrb, Button } from './styles'
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id='hero'>
       <GlowOrb className="glow-1" />
       {/* <GlowOrb className="glow-2" /> */}
       <div className="container">
