@@ -19,8 +19,12 @@ const Hero = () => {
           visual profissional e otimização para mecanismos de busca.
         </p>
         <div>
-          <Button primary>Iniciar meu projeto</Button>
-          <Button>Ver serviços</Button>
+          <a href="#contato">
+            <Button primary>Iniciar meu projeto</Button>
+          </a>
+          <a href="#serviços">
+            <Button>Ver serviços</Button>
+          </a>
         </div>
       </div>
     </HeroContainer>

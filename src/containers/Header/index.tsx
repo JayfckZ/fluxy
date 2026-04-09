@@ -4,7 +4,7 @@ import fluxy from '/fluxy-logo.png'
 const Header = () => {
   return (
     <HeaderContainer>
-      <img src={fluxy} width={'128px'} alt="Fluxy Logo" />
+      <a href="#"><img src={fluxy} width={'128px'} alt="Fluxy Logo" /></a>
       <nav>
         <NavLink href="#serviços">Serviços</NavLink>
         <NavLink href="#sobre">Sobre nós</NavLink>

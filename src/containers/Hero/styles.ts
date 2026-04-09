@@ -29,6 +29,10 @@ export const Hero = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     color: #fff;
     font-size: 36px;
@@ -63,6 +67,7 @@ export const Span = styled.p`
   gap: 12px;
   align-items: center;
   font-weight: 600;
+
 
   .dot {
     width: 6px;
