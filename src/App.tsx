@@ -382,7 +382,7 @@ function App() {
               <i className="bi bi-whatsapp"></i>
               <div>
                 <span className="uptitle">whatsapp</span>
-                <h6 className="title">(21) 966989-9636</h6>
+                <h6 className="title">(21) 96698-9636</h6>
                 <p className="subtitle">Contato 2</p>
               </div>
             </li>
