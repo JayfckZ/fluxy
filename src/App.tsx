@@ -361,7 +361,7 @@ function App() {
       <Section primary id="contato">
         <p className="uptitle">Contato</p>
         <h2 className="title">
-          Vamos conversar sobre <span>seu projeo</span>
+          Vamos conversar sobre <span>seu projeto</span>
         </h2>
         <p className="subtitle">
           Se você precisa de um site, landing page ou sistema web, podemos te
