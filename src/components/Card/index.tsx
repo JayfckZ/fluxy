@@ -2,15 +2,16 @@ import type { ReactNode } from 'react'
 import { CardContainer } from './styles'
 
 type CardProps = {
-  type: 'icon' | 'number' | 'price'
+  type: 'icon' | 'number'
   icon?: string
   number?: string
-  children: ReactNode
+  children: ReactNode,
+  id?: string
 }
 
-const Card = ({ type, icon, number, children }: CardProps) => {
+const Card = ({ type, icon, number, children, id }: CardProps) => {
   return (
-    <CardContainer>
+    <CardContainer id={id}>
       {type === 'icon' ? (
         <i className={`bi bi-${icon} icon-number`}></i>
       ) : (
