@@ -28,22 +28,24 @@ function App() {
           <Card type="icon" icon="rocket-takeoff">
             <h5 className="title">Landing pages</h5>
             <p className="subtitle">
-              Páginas de alta conversão, desenvolvidas com foco total no seu
-              objetivo — seja gerar leads, vender ou divulgar um evento.
+              Desenvolvemos páginas focadas em apresentar sua oferta com
+              clareza, gerar contatos e aumentar as chances de conversão.
             </p>
           </Card>
           <Card type="icon" icon="globe2">
             <h5 className="title">Sites institucionais</h5>
             <p className="subtitle">
-              Presença online profissional para sua empresa. Design moderno,
-              responsivo e otimizado para mecanismos de busca.
+              Construímos sites profissionais para apresentar sua empresa,
+              fortalecer sua presença online e transmitir mais confiança ao
+              público.
             </p>
           </Card>
           <Card type="icon" icon="gear">
             <h5 className="title">Sistemas Web</h5>
             <p className="subtitle">
-              Dashboards, painéis de gestão e aplicações web personalizadas que
-              automatizam e organizam o seu negócio.
+              Criamos sistemas personalizados para organizar processos,
+              centralizar informações e tornar a operação do seu negócio mais
+              simples e eficiente.
             </p>
           </Card>
           <Card type="icon" icon="lightbulb">
@@ -337,13 +339,21 @@ function App() {
             </ul>
           </PriceCard>
         </CardGrid>
-        <Card type="number" id='none'>
+        <Card type="number" id="none">
           <h6 className="title">Serviços adicionais</h6>
           <ul className="adicionais">
-            <li>Página extra: <b>R$80</b></li>
-            <li>Seção extra: <b>R$40</b></li>
-            <li>Integração com API: <b>a partir de R$100</b></li>
-            <li>Urgência de entrega: <b>+30%</b></li>
+            <li>
+              Página extra: <b>R$80</b>
+            </li>
+            <li>
+              Seção extra: <b>R$40</b>
+            </li>
+            <li>
+              Integração com API: <b>a partir de R$100</b>
+            </li>
+            <li>
+              Urgência de entrega: <b>+30%</b>
+            </li>
           </ul>
         </Card>
       </Section>

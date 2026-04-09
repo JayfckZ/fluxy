@@ -10,15 +10,13 @@ const Hero = () => {
           <div className="dot"></div> Agência digital
         </Span>
         <h1>
-          Sites e páginas que passam confiança e ajudam{' '}
-          <span>seu negócio a ser encontrado</span>
+          Criação de sites, landing pages e sistemas web
+          <span> que passam confiança e geram resultados</span>
         </h1>
         <p>
-          Criamos sistemas web, landing pages e sites sob medida com foco em
-          desempenho, visual profissional e uma experiência simples para quem
-          vai usar. Do primeiro layout à publicação, cuidamos de cada detalhe
-          para transformar sua ideia em uma presença online clara e bem
-          construída.
+          Somos uma agência digital especializada em desenvolvimento de sites,
+          landing pages e sistemas web sob medida, com foco em desempenho,
+          visual profissional e otimização para mecanismos de busca.
         </p>
         <div>
           <Button primary>Iniciar meu projeto</Button>

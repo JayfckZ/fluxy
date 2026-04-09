@@ -48,13 +48,13 @@ export const Hero = styled.section`
   }
 `
 
-export const Span = styled.span`
+export const Span = styled.p`
   background-color: color-mix(
     in srgb,
     var(--purple) 10%,
     transparent
   );
-  color: var(--purple);
+  color: var(--purple) !important;
   border: 2px solid var(--purple);
   border-radius: 16px;
 
