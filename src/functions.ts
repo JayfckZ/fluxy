@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-
 type SectionId = string
 
 export function observeSections(
