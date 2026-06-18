@@ -173,7 +173,7 @@ function App() {
               Para quem precisa de presença online rápida e profissional.
             </p>
             <p className="price">
-              R$ <span>400</span>
+              R$ <span>300</span>
             </p>
             <p className="price-sub">a partir de</p>
             <ul>
@@ -227,7 +227,7 @@ function App() {
               dedicado.
             </p>
             <p className="price">
-              R$ <span>600</span>
+              R$ <span>500</span>
             </p>
             <p className="price-sub">a partir de</p>
             <ul>
@@ -286,7 +286,7 @@ function App() {
               dados.
             </p>
             <p className="price">
-              R$ <span>900</span>
+              R$ <span>700</span>
             </p>
             <p className="price-sub">a partir de</p>
             <ul>
